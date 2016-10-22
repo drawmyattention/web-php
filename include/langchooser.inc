@@ -164,7 +164,7 @@ function language_choose_code()
         }
     }
 */
-    $selected = $languages[0];
+    $selected = isset($languages[0]) ?: 'en';
     
     // Return with all found data
     return array($selected, $explicitly_specified, $parsed_langs);
